@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+ 
+/* Global for Heading */
+.heading-container {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+   padding-top: 50px;
+}
+
+h1, h2,h3,h4,h5,h6{
+  font-family: "Nunito",sans-serif;
+     line-height: 1.2;
+    color: #2C3E50;
+}
+
+ 
+
+ h6 {
+  color: var(--tp-green);
+  font-size: 1rem;
+}
+
+h2 {
+  margin-top: -22px;
+}
+
+/* Global Colors */
+:root{
+   --tp-green: #86B817;
+}
+
+.slideInDown {
+  animation-name: slideInDown;
+}
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+@keyframes slideInDown {
+  0% {
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translateZ(0);
+  }
+}
+
+
+/* Pages Component */
+.bg-image {
+  width: 100%;
+  height: 550px;
+  /* Add the blur effect */
+  filter: blur(1.5px);
+ 
+   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  padding-top: 6rem !important;
+
+}
+
+h1{
+  color: white;
+  font-size: 4rem;
+}
+
+.pages-title {
+padding-left: 30px;
+ }
+
+.pages-container {
+  position: absolute;
+  top: 29%;
+  padding: 20px;
+  overflow: hidden;
+  left: 35%;
+ }
+
+@media (max-width:555px){
+  .pages-container{
+     left: 18px;
+  } 
+}
